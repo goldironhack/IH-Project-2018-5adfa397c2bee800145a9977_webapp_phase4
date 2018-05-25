@@ -1,15 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+    <link rel="shortcut icon" href="http://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-PNG-Picture.png">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <title>Nice Housing</title>
+  </head>
+  <body>
+    <body background="https://www.toptal.com/designers/subtlepatterns/patterns/spiration-light.png"></body>
+    <div class="row justify-content-center">
+      <h1>Nice Housing New York</h1>
     </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10" id="text">
+        This applications intends to help the new student of NYU stern school of Business to
+        get a new place to live in that is safe, affordable and near the university among
+        other benefits.</div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row justify-content-center">
+        <button id="showU">Show/Hide university</button>
+        <button id="showDistricts">Show NY city districts</button>
+      </div>
+      <div class="row justify-content-center">
+        <button id="getNeiBronx"> Show/Hide Bronx neighborhoods</button>
+        <button id="getNeiBrooklyn"> Show/Hide Brooklyn neighborhoods</button>
+        <button id="getNeiManhattan"> Show/Hide Manhattan neighborhoods</button>
+        <button id="getNeiQueens"> Show/Hide Queens neighborhoods</button>
+        <button id="getNeiStIsland"> Show/Hide Staten Island neighborhoods</button>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 justify-content-center">
+          <div id="map"></div>
+        </div>
+          <div class="col-md-1">
+            <div class="dropdown">
+             <button onclick="myFunction()" class="dropbtn">Housing</button>
+             <div id="myDropdown" class="dropdown-content">
+               <div class="btnHousing">
+                 <button id="bthbronx">Bronx</button>
+                 <button id="bthbrooklyn">Brooklyn</button>
+                 <button id="bthmanhattan">Manhattan</button>
+                 <button id="bthqueens">Queens</button>
+                 <button id="bthstisland">Staten Island</button>
+               </div>
+             </div>
+           </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+        <button id="showMuseumsBronx">Bronx Museums</button>
+        <button id="showMuseumsBrooklyn">Brooklyn Museums</button>
+        <button id="showMuseumsManhattan">Manhattan Museums</button>
+        <button id="showMuseumsQueens">Queens Museums</button>
+        <button id="showMuseumsSt">Staten Island Museums</button>
+      </div>
+      <div class="row justify-content-center">
+        <button id="bronxHouses">Bronx Housing</button>
+      </div>
+      <div class="row justify-content-center">
+        <table id="housingStyle">
+          <thead>
+            <tr>
+              <th>Borough</th>
+              <th>District Number</th>
+              <th>Name</th>
+              <th>Street</th>
+            </tr>
+            <tbody id="tableH">
+            </tbody>
+          </thead>
+        </table>
+      </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmsoNWToucbKC9uArndPzSpqS15bITqTM&callback=initMap">
+    </script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
